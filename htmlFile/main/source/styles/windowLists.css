@@ -1,0 +1,14 @@
+.windowLists{
+    display:flex;
+    gap:30px;
+    width:100vw;
+    height:100vh;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    cursor:pointer;
+    list{
+        width:300px;
+        height:600px;
+        background-color:#eee;
+    }
+}
