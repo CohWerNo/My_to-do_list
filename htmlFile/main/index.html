@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-32">
+        <title>{{ title }}</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='main/source/styles/main.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='main/source/styles/windowLists.css') }}">
-        <title>{{ title }}</title>
+        <script defer src="{{ url_for('static', filename='main/source/js/openList.js') }}"></script>
+        <script>
+            window.onload = function() {
+                pageCreate();
+            }
+        </script>
     </head>
     <body style="margin:0px;">
-        <div class="windowLists">
+        <div id="windowLists" class="windowLists">
             <list></list>
         </div>
     </body>
