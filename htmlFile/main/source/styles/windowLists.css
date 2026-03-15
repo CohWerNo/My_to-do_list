@@ -1,12 +1,16 @@
 .windowLists{
     display:flex;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    justify-content:center;
     gap:30px;
-    width:100vw;
-    height:100vh;
+    width:calc(100vw - 20px);
+    height:calc(100vh - 20px);
+    margin:10px;
     overflow-x:hidden;
     overflow-y:scroll;
-    cursor:pointer;
     list{
+        cursor:pointer;
         width:300px;
         height:600px;
         background-color:#eee;
