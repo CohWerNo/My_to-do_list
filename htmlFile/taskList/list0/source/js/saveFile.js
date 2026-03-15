@@ -8,3 +8,6 @@ function saveFile(text="") {
     })
     .catch(error => console.error("error:", error))
 }
+document.addEventListener("input", function(event) {
+    saveFile(event.target.value)
+});
